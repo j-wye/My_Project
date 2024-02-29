@@ -34,8 +34,23 @@ sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn.so.8.7.0 /usr
 sudo ldconfig
 ```
 
-#### PyTorch Installation
+#### Verify Settings
+```bash
+ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
+
+cat /usr/local/cuda-11.8/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+---> result
+    * #define CUDNN_MAJOR 8
+    * #define CUDNN_MINOR 7
+    * #define CUDNN_PATCHLEVEL 0
+```
+
+#### Construction Environment
 ```bash
 conda create -n LOD python=3.8
 conda activate LOD
+pip install --upgrade pip
 pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+pip install matplotlib numba pandas scipy tqdm open3d opencv-python tensorboard
+python setup.py develop
+```
