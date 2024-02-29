@@ -54,3 +54,6 @@ pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https
 pip install matplotlib numba pandas scipy tqdm open3d opencv-python tensorboard
 python setup.py develop
 ```
+
+cd anaconda3/envs/LOD/lib/python3.8/site-packages/torch && gedit functional.py
+find VF.meshgrid => indexing='jf' 추가하기
