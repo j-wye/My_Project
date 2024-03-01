@@ -49,10 +49,11 @@ cat /usr/local/cuda-11.8/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```bash
 conda create -n LOD python=3.8
 conda activate LOD
+
 pip install --upgrade pip
 pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
 pip install matplotlib numba pandas scipy tqdm open3d opencv-python tensorboard
-python setup.py develop
+cd ops/ && python setup.py develop
 ```
 
 cd anaconda3/envs/LOD/lib/python3.8/site-packages/torch && gedit functional.py
