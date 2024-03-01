@@ -56,5 +56,5 @@ pip install matplotlib numba pandas scipy tqdm open3d opencv-python tensorboard
 cd ops/ && python setup.py develop
 ```
 
-cd anaconda3/envs/LOD/lib/python3.8/site-packages/torch && gedit functional.py
-find VF.meshgrid => indexing='jf' 추가하기
+`cd anaconda3/envs/LOD/lib/python3.8/site-packages/torch && gedit functional.py
+find VF.meshgrid => indexing='jf' 추가하기`
