@@ -39,7 +39,6 @@ sudo ldconfig
 ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
 
 cat /usr/local/cuda-11.8/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
-
 `result`
     * #define CUDNN_MAJOR 8
     * #define CUDNN_MINOR 7
