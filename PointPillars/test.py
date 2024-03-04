@@ -126,13 +126,12 @@ def main(args):
         
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Configuration Parameters')
-    parser.add_argument('--ckpt', default='pretrained/epoch_160.pth', help='your checkpoint for kitti')
+    parser.add_argument('--ckpt', default='epoch_160.pth', help='your checkpoint for kitti')
     parser.add_argument('--pc_path', help='your point cloud path')
     parser.add_argument('--calib_path', default='', help='your calib file path')
     parser.add_argument('--gt_path', default='', help='your ground truth path')
     parser.add_argument('--img_path', default='', help='your image path')
-    parser.add_argument('--no_cuda', action='store_true',
-                        help='whether to use cuda')
+    parser.add_argument('--no_cuda', action='store_true', help='whether to use cuda')
     args = parser.parse_args()
 
     main(args)
