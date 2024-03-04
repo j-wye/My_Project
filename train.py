@@ -199,7 +199,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Configuration Parameters')
     parser.add_argument('--data_root', default='~/dataset/kitti/', help='your data root for kitti')
-    parser.add_argument('--saved_path', default='result')
+    parser.add_argument('--saved_path', default='results_train')
     parser.add_argument('--batch_size', type=int, default=8)
     parser.add_argument('--num_workers', type=int, default=4)
     parser.add_argument('--nclasses', type=int, default=3)
