@@ -1,6 +1,7 @@
 # My Project
-
+`cd && mkdir -p A`
 ## 3D LiDAR-Camera Calibration
+
 ### Environment
 ```
 Ubuntu 22.04 humble
@@ -11,6 +12,7 @@ pytorch 2.0.0
 
 ### Humble Installation
 ```
+cd A
 wget https://raw.githubusercontent.com/blu-y/turtle/main/autoset.sh
 bash autoset.sh
 source ~/.bashrc
@@ -18,6 +20,7 @@ source ~/.bashrc
 
 ### CUDA Installation
 ```bash
+cd A
 wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 sudo sh cuda_11.8.0_520.61.05_linux.run
 echo 'export PATH="/usr/local/cuda-11.8/bin:$PATH"' >> ~/.bashrc
