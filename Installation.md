@@ -18,7 +18,7 @@ echo 'export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"' >> ~
 
 #### cuDNN Installation
 ```bash
-[Download cuDNN v8.7.0 for CUDA 11.X => Local Installer for Linux x86_64 (Tar)] (https://developer.nvidia.com/rdp/cudnn-archive)
+[Download cuDNN v8.7.0 for CUDA 11.X => Local Installer for Linux x86_64 (Tar)](https://developer.nvidia.com/rdp/cudnn-archive)
 cd ~/Download && tar -xvf cudnn-linux-x86_64-8.7.0.84_cuda11-archive.tar.xz
 sudo cp cudnn-linux-x86_64-8.7.0.84_cuda11-archive/include/cudnn* /usr/local/cuda-11.8/include
 sudo cp cudnn-linux-x86_64-8.7.0.84_cuda11-archive/lib/libcudnn* /usr/local/cuda-11.8/lib64
