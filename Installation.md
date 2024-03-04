@@ -1,7 +1,7 @@
 ## PointPillars
 
 ### Environment
-```bash
+```
 Ubuntu 22.04 humble
 CUDA 11.8
 cuDNN 8.7
