@@ -30,6 +30,7 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
 
 ```
 cd ops
+pip install matplotlib numba pandas scipy tqdm open3d opencv-python tensorboard
 python setup.py develop
 ```
 
@@ -101,25 +102,21 @@ python evaluate.py --ckpt pretrained/epoch_160.pth --data_root your_path_to_kitt
 cd PointPillars/
 
 # 1. infer and visualize point cloud detection
-python test.py --ckpt pretrained/epoch_160.pth --pc_path your_pc_path 
+python test.py --ckpt epoch_160.pth --pc_path your_pc_path 
 
 # 2. infer and visualize point cloud detection and gound truth.
-python test.py --ckpt pretrained/epoch_160.pth --pc_path your_pc_path --calib_path your_calib_path  --gt_path your_gt_path
+python test.py --ckpt epoch_160.pth --pc_path your_pc_path --calib_path your_calib_path  --gt_path your_gt_path
 
 # 3. infer and visualize point cloud & image detection
-python test.py --ckpt pretrained/epoch_160.pth --pc_path your_pc_path --calib_path your_calib_path --img_path your_img_path
+python test.py --ckpt epoch_160.pth --pc_path your_pc_path --calib_path your_calib_path --img_path your_img_path
 
 
 e.g. [infer on val set 000134]
 
-python test.py --ckpt pretrained/epoch_160.pth --pc_path /home/lifa/data/KITTI/training/velodyne_reduced/000134.bin
+python test.py --ckpt epoch_160.pth --pc_path /home/research/dataset/kitti/testing/velodyne_reduced/000040.bin
 
 or
 
-python test.py --ckpt pretrained/epoch_160.pth --pc_path /home/lifa/data/KITTI/training/velodyne_reduced/000134.bin --calib_path /home/lifa/data/KITTI/training/calib/000134.txt --img_path /home/lifa/data/KITTI/training/image_2/000134.png --gt_path /home/lifa/data/KITTI/training/label_2/000134.txt
+python test.py --ckpt epoch_160.pth --pc_path /home/research/dataset/kitti/testing/velodyne_reduced/000040.bin --calib_path /home/research/dataset/kitti/testing/calib/000040.txt --img_path /home/research/dataset/kitti/testing/image_2/000040.png --gt_path /home/research/dataset/kitti/testing/label_2/000040.txt
 
 ```
-
-## Acknowledements
-
-Thanks for the open souce code [mmcv](https://github.com/open-mmlab/mmcv), [mmdet](https://github.com/open-mmlab/mmdetection) and [mmdet3d](https://github.com/open-mmlab/mmdetection3d).
