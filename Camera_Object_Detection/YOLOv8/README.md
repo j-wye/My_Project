@@ -41,7 +41,7 @@ sudo mv ~/Download/yolov8x.pt ~/ros2_ws/src/My_Project/Camera_Object_Detection/Y
 2. FPS comparison for each model size
 	* Result
 
-		|:FPS:|:CPU:|:GPU:|:Model:|
-		|:FPS:|:CPU:|:GPU:|:Model:|
-		|:FPS:|:CPU:|:GPU:|:Model:|
-		|:FPS:|:CPU:|:GPU:|:Model:|
+		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
+		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
+		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
+		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
