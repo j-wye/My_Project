@@ -57,17 +57,11 @@ cat /usr/local/cuda-11.8/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 sha256sum Anaconda3-2023.09-0-Linux-x86_64.sh
 bash Anaconda3-2023.09-0-Linux-x86_64.sh
+echo 'export PATH="/opt/anaconda3/bin:$PATH" >> ~/.bashrc'
 source ~/.bashrc
-
-conda create -n LOD python=3.8
-conda activate LOD
-
-pip install --upgrade pip
-pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
 `cd anaconda3/envs/LOD/lib/python3.8/site-packages/torch && gedit functional.py => find VF.meshgrid => indexing='jf' 추가하기`
 
-
-### Make Clean
+### Make Clean Directory
 `sudo rm -rf ~/A`

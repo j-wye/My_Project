@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import datetime
 
 def main():
-    model = YOLO('./pretrained/yolov8m.pt')
+    model = YOLO('./pretrained/yolov8m.pt').to('cuda')
 
     # Input Camera index Settings
     cap = cv2.VideoCapture(0)
