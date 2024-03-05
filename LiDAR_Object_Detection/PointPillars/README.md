@@ -7,15 +7,6 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
 ![](./figures/pcd_train_000134.png)
 ![](./figures/img_train_000134.png)
 
-## [Compile]
-
-```
-cd ops && cal
-pip install numba numpy open3d opencv-python pyyaml tqdm setuptools
-python setup.py develop
-```
-* if you don't have the default settings for conda, lidar, then see this [README.md](../README.md) first.
-
 ## [Datasets]
 
 1. Download
@@ -90,6 +81,15 @@ python setup.py develop
             |- kitti_infos_test.pkl
             |- kitti_dbinfos_train.pkl
     ```
+
+## [Compile]
+
+```
+cd ops && cal
+pip install numba numpy open3d opencv-python pyyaml tqdm setuptools
+python setup.py develop
+```
+* if you don't have the default settings for conda, lidar, then see this [README.md](../README.md) first.
 
 ## [Training]
 
