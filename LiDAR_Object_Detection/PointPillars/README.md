@@ -14,10 +14,11 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
 ## [Compile] 
 
 ```
-cd ops
-pip install -r requirements.txt
+cd ops && cal
+pip install numba numpy open3d opencv-python pyyaml tqdm setuptools
 python setup.py develop
 ```
+* if you don't have the default settings for conda, lidar, then see this [README.md](../README.md) first.
 
 ## [Datasets]
 
@@ -128,11 +129,11 @@ python test.py --pc_path your_pc_path --calib_path your_calib_path --img_path yo
 * e.g. [infer on val set 000040]
 ```
 # 1. infer and visualize point cloud detection
-python test.py --pc_path /home/research/dataset/kitti/testing/velodyne_reduced/000040.bin
+python test.py --pc_path ~/dataset/kitti/testing/velodyne_reduced/000040.bin
 
 
 # 2. infer and visualizae point cloud detection & image detection & ground truth
-python test.py --pc_path /home/research/dataset/kitti/testing/velodyne_reduced/000040.bin --calib_path /home/research/dataset/kitti/testing/calib/000040.txt --img_path /home/research/dataset/kitti/testing/image_2/000040.png --gt_path /home/research/dataset/kitti/testing/label_2/000040.txt
+python test.py --pc_path ~/dataset/kitti/testing/velodyne_reduced/000040.bin --calib_path ~/dataset/kitti/testing/calib/000040.txt --img_path ~/dataset/kitti/testing/image_2/000040.png --gt_path ~/dataset/kitti/testing/label_2/000040.txt
 ```
 
 ## [Test Detection Visualization]
