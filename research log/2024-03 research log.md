@@ -14,15 +14,14 @@
 - 지금까지 떠오른 생각은 아래와 같다
     
     1. 
-
-        
-        # Object Detection with LiDAR and Camera simultaneously and separately
-        - Generate each accuracy result as a list
-        - Create a new list from each of the two lists via dot product
-        - Normalize the new list to generate the final accuracy list
-        
-        이렇게 만들어진 final accuracy list가 기존의 각각의 accuracy list와 비교해서 어떠할지 한번 시도..!
-        - 비가오거나, 흐릿할 때 위의 결과가 더 나은 성능을 보인다면 성공적인 시도
+    ```
+    # Object Detection with LiDAR and Camera simultaneously and separately
+    - Generate each accuracy result as a list
+    - Create a new list from each of the two lists via dot product
+    - Normalize the new list to generate the final accuracy list
+    ```
+    이렇게 만들어진 final accuracy list가 기존의 각각의 accuracy list와 비교해서 어떠할지 한번 시도..!
+    - 비가오거나, 흐릿할 때 위의 결과가 더 나은 성능을 보인다면 성공적인 시도
     
 
     2. 
