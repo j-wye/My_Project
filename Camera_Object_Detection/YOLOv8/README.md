@@ -13,6 +13,7 @@
 Build Environments for Using YOLOv8 :
 ```bash
 cav (#conda activate vision)
+pip install opencv-python numpy matplotlib
 pip install -U ultralytics
 ```
 * if you don't have the default settings for conda, vision, then see this [README.md](../README.md) first.
