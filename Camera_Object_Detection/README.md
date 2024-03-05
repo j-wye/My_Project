@@ -1,9 +1,10 @@
 # Camera Object Detection for just studying
----
-## 1. YOLOv8
-### Settings
 
-1. Virtual Envrionment with Anaconda
+## 1. YOLOv8
+
+### Settings
+1. Anaconda Envrionment Setting
+    
     ```bash
     conda create -n vision python=3.11
     echo "alias cav='conda activate vision'" >> ~/.bashrc
