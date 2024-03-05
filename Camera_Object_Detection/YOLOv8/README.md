@@ -37,14 +37,20 @@ sudo mv ~/Download/yolov8x.pt ~/ros2_ws/src/My_Project/Camera_Object_Detection/Y
 	cav && cd My_Project/Camera_Object_Detection/YOLOv8
 	python basic_detection.py
 	```
+34.00
+
 
 2. FPS comparison for each model size
 	* Result
-
-		| <center>FPS</center> | <center>CPU</center> | <center>GPU</center> | <center>Model</center> |
-
-		| <center>FPS</center> | <center>CPU</center> | <center>GPU</center> | <center>Model</center> |
-
-		| <center>FPS</center> | <center>CPU</center> | <center>GPU</center> | <center>Model</center> |
-		
-		| <center>FPS</center> | <center>CPU</center> | <center>GPU</center> | <center>Model</center> |
+		| <center>Model</center> | <center>Resolution</center> | <center>CPU</center> | <center>GPU</center> | <center>FPS</center> |
+		|:--------|:--------|:--------|:--------|:--------|
+		| <center>YOLOv8n.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**314.75**</center> |
+		|| <center>1280 * 720</center> |||<center>**15.17**</center> |
+		| <center>YOLOv8s.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**234.39**</center> |
+		|| <center>1280 * 720</center> |||<center>**120**</center> |
+		| <center>YOLOv8m.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**134.21**</center> |
+		|| <center>1280 * 720</center> |||<center>**120**</center> |
+		| <center>YOLOv8l.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**92.48**</center> |
+		|| <center>1280 * 720</center> |||<center>**120**</center> |
+		| <center>YOLOv8x.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**59.22**</center> |
+		|| <center>1280 * 720</center> |||<center>**120**</center> |
