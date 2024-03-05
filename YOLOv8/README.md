@@ -1,7 +1,9 @@
 ## Settings
-```
+```bash
 conda create -n vision python=3.11
 echo "alias cav='conda activate vision'" >> ~/.bashrc
+sb && cav
+
 pip install -U ultralytics
 pip install opencv-python
 ```
