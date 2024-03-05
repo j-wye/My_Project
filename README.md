@@ -1,4 +1,4 @@
-# My Project
+# Personal Projects
 ## [Research Log](./research%20log/README.md)
 ## Basic Settings before project
 [settings.md](./settings.md) : Installation before doing project. 
