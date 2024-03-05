@@ -42,6 +42,9 @@ sudo mv ~/Download/yolov8x.pt ~/ros2_ws/src/My_Project/Camera_Object_Detection/Y
 	* Result
 
 		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
+
 		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
+
 		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
+		
 		|<center>FPS</center>|<center>CPU</center>|<center>GPU</center>|<center>Model</center>|
