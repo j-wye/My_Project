@@ -9,6 +9,8 @@
 
 5. [YOLOv8x pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8x.pt)
 
+6. [YOLOv8m-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8m-seg.pt)
+
 ## Settings
 Build Environments for Using YOLOv8 :
 ```bash
@@ -44,9 +46,13 @@ sudo mv ~/Download/yolov8x.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/
 
 
 ## Explanation
-1. Code to check for basic detection
+1. Code to check for basic detection :
 
 	```bash
 	cav && cd Personal_Project/Camera_Object_Detection/YOLOv8
 	python basic_detection.py
 	```
+	## [Test detection results visualization]
+	![](./figures/test_img1.png)
+	![](./figures/test_img2.png)
+
