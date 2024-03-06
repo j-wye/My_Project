@@ -20,11 +20,11 @@ pip install -U ultralytics
 
 The downloaded pretrained models move to pretrained folder:
 ```bash
-sudo mv ~/Download/yolov8n.pt ~/My_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8s.pt ~/My_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8m.pt ~/My_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8l.pt ~/My_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8x.pt ~/My_Project/Camera_Object_Detection/YOLOv8/pretrained/
+sudo mv ~/Download/yolov8n.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
+sudo mv ~/Download/yolov8s.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
+sudo mv ~/Download/yolov8m.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
+sudo mv ~/Download/yolov8l.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
+sudo mv ~/Download/yolov8x.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
 ```
 
 ## Reference
@@ -47,6 +47,6 @@ sudo mv ~/Download/yolov8x.pt ~/My_Project/Camera_Object_Detection/YOLOv8/pretra
 1. Code to check for basic detection
 
 	```bash
-	cav && cd My_Project/Camera_Object_Detection/YOLOv8
+	cav && cd Personal_Project/Camera_Object_Detection/YOLOv8
 	python basic_detection.py
 	```

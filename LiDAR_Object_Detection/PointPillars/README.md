@@ -29,7 +29,7 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
     ```
 
 2. Make dataset
-    ```
+    ```bash
     cd ~/Download
     unzip data_object_velodyne.zip
     unzip data_object_image_2.zip
@@ -46,7 +46,7 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
     sudo mv -r ~/Download/data_object_label_2/training/label_2 ~/dataset/kitti/training/
     ```
     Now which in Download folder becomes dummy. So delete as follows:
-    ```
+    ```bash
     sudo rm -rf ~/Download/data_object_velodyne
     sudo rm -rf ~/Download/data_object_image_2
     sudo rm -rf ~/Download/data_object_calib
@@ -54,8 +54,8 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
     ```
 
 3. Pre-process KITTI datasets first
-    ```
-    cd PointPillars/
+    ```bash
+    cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
     python pre_process_kitti.py
     ```
 
@@ -84,7 +84,7 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
 
 ## [Compile]
 
-```
+```bash
 cd ops && cal
 pip install numba numpy open3d opencv-python pyyaml tqdm setuptools
 python setup.py develop
@@ -93,22 +93,22 @@ python setup.py develop
 
 ## [Training]
 
-```
-cd PointPillars/
+```bash
+cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
 python train.py
 ```
 
 ## [Evaluation]
 
-```
-cd PointPillars/
+```bash
+cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
 python evaluate.py
 ```
 
 ## [Test]
 
-```
-cd PointPillars/
+```bash
+cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
 
 # 1. infer and visualize point cloud detection
 python test.py --pc_path your_pc_path 
@@ -123,7 +123,7 @@ python test.py --pc_path your_pc_path --calib_path your_calib_path --img_path yo
 ```
 
 * e.g. [infer on val set 000040]
-```
+```bash
 # 1. infer and visualize point cloud detection
 python test.py --pc_path ~/dataset/kitti/testing/velodyne_reduced/000040.bin
 
