@@ -53,6 +53,8 @@ sudo mv ~/Download/yolov8x.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/
 	python basic_detection.py
 	```
 	## [Test detection results visualization]
+	1. **Bounding box**
+
 	![](./figures/test_img1.png)
 	![](./figures/test_img2.png)
 
