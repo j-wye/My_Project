@@ -12,6 +12,7 @@
 #### 2024-03-05
 - ***<U>3D LiDAR Object Detection의 결과를 어떻게 활용해야 할지는 좀 더 고민해볼것..</U>***
 - 지금까지 떠오른 생각은 아래와 같다
+    
     1. My Subjective thoughts (Eliminate feasibility) # 실현가능성 배제
         - Object Detection with LiDAR and Camera simultaneously and separately
         - Generate each accuracy result as a list
@@ -24,9 +25,8 @@
         또 다른 방법 : 날씨에 따른 가중치를 두어 two accuracy list dot product
         - 문제점 : 가중치를 어떻게 메길 것인지
             - *<U>날씨에 따라 줄 수 있는 standard가 존재하는지아니면 이걸(?) 연구.. 이미 존재하는지 찾아보기</U>*
-    
 
-    2. 
+    2. LiDAR-Camera Calibration
         - LiDAR-Camera Calibration을 진행 (알고리즘 미정)
         - 이를 사용해 object detection accuracy 향상 확인 (그냥 해보는 느낌)
 
@@ -53,8 +53,7 @@
 
 #### 2024-03-07 ~ 2024-03-12 (예정)
 - Coding for ***Extracting*** Camera Object Detection accuracy list
-- Coding for ***Extracting*** LiDAR Object Detection accuracy list (Difficult)
-- 
+- Coding for ***Extracting*** LiDAR Object Detection accuracy list (Difficult..)
 
 
 #### TODO
@@ -66,3 +65,4 @@
     - 기계관 107에 존재하는 차량 하나를 사용해서 데이터셋 확보(?)
         - 하나의 환경에서 고정된 두 센서를 활용한 데이터 수집 
     - 아니면 
+- Lidar Segmentation (나중에)
