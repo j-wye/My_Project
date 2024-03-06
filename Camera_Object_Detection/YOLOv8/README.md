@@ -23,6 +23,11 @@
 
 	[YOLOv8x-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8x-seg.pt)
 
+The downloaded pretrained models move to pretrained folder:
+
+`sudo mv ~/Download/*.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/`
+
+
 ## Settings
 Build Environments for Using YOLOv8 :
 ```bash
@@ -32,10 +37,7 @@ pip install -U ultralytics
 ```
 * if you don't have the default settings for conda, vision, then see this [README.md](../README.md) first.
 
-The downloaded pretrained models move to pretrained folder:
-```bash
-sudo mv ~/Download/*.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
-```
+
 
 ## Reference
 [YOLOv8 document1](https://docs.ultralytics.com/ko/modes/predict/)
