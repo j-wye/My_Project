@@ -7,7 +7,7 @@
 #### 2024-03-04
 - Compare the pretrained model with the model I trained
 - Pretrained model's performance is better than I did
-- Progress evalutation, test and visualization [:link:](../LiDAR_Object_Detection/PointPillars/README.md#evaluation)
+- Progress evalutation, test and visualization [🔗](../LiDAR_Object_Detection/PointPillars/README.md#evaluation)
 
 #### 2024-03-05
 - ***<U>3D LiDAR Object Detection의 결과를 어떻게 활용해야 할지는 좀 더 고민해볼것..</U>***
@@ -39,16 +39,16 @@
                 3. 행동 이후 다시 원래 자리로 돌아오기
     
     4. LiDAR PCD Structure study
-        - VoxelNet[:link:](https://arxiv.org/abs/1711.06396), PointNet++[:link:](https://arxiv.org/abs/1706.02413)
+        - VoxelNet[🔗](https://arxiv.org/abs/1711.06396), PointNet++[🔗](https://arxiv.org/abs/1706.02413)
         - Study the concept, then apply with the algorithm
 
 
 #### 2024-03-06
-- Study how to use YOLOv8 [:link:](../Camera_Object_Detection/YOLOv8/README.md#reference)
-- Performance experiments with all pretrained models [:link:](../Camera_Object_Detection/YOLOv8/README.md#model-test)
+- Study how to use YOLOv8 [🔗](../Camera_Object_Detection/YOLOv8/README.md#reference)
+- Performance experiments with all pretrained models [🔗](../Camera_Object_Detection/YOLOv8/README.md#model-test)
     - I put first priority on **Real-time**
     - LiDAR Object Detection 코드가 완성되면 반복적인 실험으로 적절한 pretrained model 선택
-- Up to now progress [:link:](../Camera_Object_Detection/YOLOv8/README.md#progress)
+- Up to now progress [🔗](../Camera_Object_Detection/YOLOv8/README.md#progress)
 
 #### 2024-03-07 ~ 2024-03-12 (예정)
 - Coding for ***Extracting*** Camera Object Detection accuracy list
