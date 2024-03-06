@@ -11,7 +11,7 @@
 
 #### 2024-03-05
 - ***<U>3D LiDAR Object Detection의 결과를 어떻게 활용해야 할지는 좀 더 고민해볼것..</U>***
-- 지금까지 떠오른 생각은 아래와 같다
+- 지금까지 떠오른 생각
     
     1. My Subjective thoughts (Eliminate feasibility) # 실현가능성 배제
         - Object Detection with LiDAR and Camera simultaneously and separately
