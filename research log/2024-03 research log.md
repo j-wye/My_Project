@@ -39,15 +39,13 @@
                 3. 행동 이후 다시 원래 자리로 돌아오기
     
     4. LiDAR PCD Structure study
-        - With VoxelNet, PointNet++
-        - [VoxelNet Paper](https://arxiv.org/abs/1711.06396)
-        - [PointNet++ Paper](https://arxiv.org/abs/1706.02413)
+        - VoxelNet[:link:](https://arxiv.org/abs/1711.06396), PointNet++[:link:](https://arxiv.org/abs/1706.02413)
         - Study the concept, then apply with the algorithm
 
 
 #### 2024-03-06
-- Study how to use YOLOv8 [:link](../Camera_Object_Detection/YOLOv8/README.md#reference)
-- Performance experiments with all pretrained models [:link](../Camera_Object_Detection/YOLOv8/README.md#result)
+- Study how to use YOLOv8 [:link:](../Camera_Object_Detection/YOLOv8/README.md#reference)
+- Performance experiments with all pretrained models [:link:](../Camera_Object_Detection/YOLOv8/README.md#result)
     - I put first priority on **Real-time**
     - LiDAR Object Detection 코드가 완성되면 반복적인 실험으로 적절한 pretrained model 선택
 
