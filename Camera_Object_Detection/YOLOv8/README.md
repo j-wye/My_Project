@@ -1,15 +1,27 @@
 ## Donwload links
-1. [YOLOv8n pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8n.pt)
+- **Bounding Box**
 
-2. [YOLOv8s pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8s.pt)
+	[YOLOv8n pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8n.pt)
 
-3. [YOLOv8m pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8m.pt)
+	[YOLOv8s pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8s.pt)
 
-4. [YOLOv8l pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8l.pt)
+	[YOLOv8m pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8m.pt)
 
-5. [YOLOv8x pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8x.pt)
+	[YOLOv8l pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8l.pt)
 
-6. [YOLOv8m-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8m-seg.pt)
+	[YOLOv8x pretrained Model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8x.pt)
+
+- **Segmentation**
+	
+	[YOLOv8n-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8n-seg.pt)
+
+	[YOLOv8s-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8s-seg.pt)
+
+	[YOLOv8m-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8m-seg.pt)
+
+	[YOLOv8l-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8l-seg.pt)
+
+	[YOLOv8x-seg pretrained model](https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8x-seg.pt)
 
 ## Settings
 Build Environments for Using YOLOv8 :
@@ -22,11 +34,7 @@ pip install -U ultralytics
 
 The downloaded pretrained models move to pretrained folder:
 ```bash
-sudo mv ~/Download/yolov8n.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8s.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8m.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8l.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
-sudo mv ~/Download/yolov8x.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
+sudo mv ~/Download/*.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/pretrained/
 ```
 
 ## Reference
@@ -35,7 +43,7 @@ sudo mv ~/Download/yolov8x.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/
 [YOLOv8 document2](https://docs.ultralytics.com/ko/reference/engine/results/#ultralytics.engine.results.Results)
 
 
-## Result
+## Model Test
 | <center>Model</center> | <center>Resolution</center> | <center>CPU</center> | <center>GPU</center> | <center>Processing Time</center> | <center>FPS</center> |
 |:--------|:--------|:--------|:--------|:--------|:--------|
 | <center>YOLOv8n.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**314.75**</center> | <center>**34.00**</center> |
@@ -45,20 +53,23 @@ sudo mv ~/Download/yolov8x.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/
 | <center>YOLOv8x.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**59.22**</center> | <center>**32.34**</center> |
 
 
-## Explanation
+## Progress
 1. Code to check for basic detection :
 
 	```bash
 	cav && cd Personal_Project/Camera_Object_Detection/YOLOv8
 	python basic_detection.py
 	```
-	## [Test detection results visualization]
-	1. **Bounding box**
-
+	## [Visualization]
 	![](./figures/test_img1.png)
 	![](./figures/test_img2.png)
 
-	2. **Segmentation**
+2. Code to check for basic segmentation :
 
+	```bash
+	cav && cd Personal_Project/Camera_Object_Detection/YOLOv8
+	python basic_detection_seg.py
+	```
+	## [Visualization]
 	![](./figures/test_seg_img1.png)
 	![](./figures/test_seg_img2.png)
