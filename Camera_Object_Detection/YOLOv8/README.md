@@ -58,3 +58,7 @@ sudo mv ~/Download/yolov8x.pt ~/Personal_Project/Camera_Object_Detection/YOLOv8/
 	![](./figures/test_img1.png)
 	![](./figures/test_img2.png)
 
+	2. **Segmentation**
+
+	![](./figures/test_seg_img1.png)
+	![](./figures/test_seg_img2.png)
