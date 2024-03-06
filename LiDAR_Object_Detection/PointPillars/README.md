@@ -52,10 +52,18 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
     sudo rm -rf ~/Download/data_object_calib
     sudo rm -rf ~/Download/data_object_label_2
     ```
-
-3. Pre-process KITTI datasets first
+3. Anaconda Environment Setting
     ```bash
-    cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
+    conda create -n pointpillars python=3.8
+    echo "alias capp='conda activate pointpillars'" >> ~/.bashrc
+    sb && capp
+    pip install --upgrade pip
+    pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+    ```
+
+4. Pre-process KITTI datasets first
+    ```bash
+    cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/
     python pre_process_kitti.py
     ```
 
@@ -85,30 +93,29 @@ A Simple PointPillars PyTorch Implenmentation for 3D Lidar(KITTI) Detection. [[Z
 ## [Compile]
 
 ```bash
-cd ops && cal
+cd ops
 pip install numba numpy open3d opencv-python pyyaml tqdm setuptools
 python setup.py develop
 ```
-* if you don't have the default settings for conda, lidar, then see this [README.md](../README.md) first.
 
 ## [Training]
 
 ```bash
-cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
+cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/
 python train.py
 ```
 
 ## [Evaluation]
 
 ```bash
-cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
+cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/
 python evaluate.py
 ```
 
 ## [Test]
 
 ```bash
-cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/ && cal
+cd ~/Personal_Project/LiDAR_Object_Detection/PointPillars/
 
 # 1. infer and visualize point cloud detection
 python test.py --pc_path your_pc_path 
