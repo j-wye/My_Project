@@ -79,11 +79,11 @@
 
     7. Differential Geometry (미분 기하학)
         - Manifolds (다양체) : `고차원 공간에서 곡선이나 곡면과 같이 연속적인 구조를 일반화한 개념`
-        - Curvature (곡률) : `곡면이나 공간이 얼마나 휘어져 있는지를 측정` -> **<span style="background-color:#FFE6E6"> 자동차의 경로 계획에 중요한 정보 제공 </span>**
-        - Geodesics (최단 경로) : `곡면 상에서 두 점을 잇는 가장 짧은 경로` -> **<span style="background-color:#FFE6E6"> 경로 계획에서 최적 경로 찾는데 사용 </span>**
+        - Curvature (곡률) : `곡면이나 공간이 얼마나 휘어져 있는지를 측정` -> **<span style="color:red"> 자동차의 경로 계획에 중요한 정보 제공 </span>**
+        - Geodesics (최단 경로) : `곡면 상에서 두 점을 잇는 가장 짧은 경로` -> **<span style="color:red"> 경로 계획에서 최적 경로 찾는데 사용 </span>**
 
     8. Riemannian Theory (리만 기하학)
-        - Riemannian Metric (리만 행렬) : `다양체 내의 점들 사이의 거리를 측정하는 함수` -> **<span style="background-color:#FFE6E6"> 로컬 거리 정보 제공 </span>**
+        - Riemannian Metric (리만 행렬) : `다양체 내의 점들 사이의 거리를 측정하는 함수` -> **<span style="color:red"> 로컬 거리 정보 제공 </span>**
         - Connections (연결) : `다양체 상에서 벡터 필드의 방향을 어떻게 변화시킬지 정의` -> `경로의 곡률을 계산하는데 필요`
         - Ricci Curvature (리치 곡률) : `다양체의 곡률을 나타내는 또 다른 측정치로 공간의 전반적인 구조를 이해하는데 도움`
 
@@ -105,7 +105,7 @@
         - 확률 이론, 확률 변수, 통계적 추정과 검정, 베이지안 추론 학습 -> 센서 데이터의 불확실성을 다루고, 노이즈 관리 능력 향상
     
     4. Optimization Theory
-        - 최적화 문제의 정의, 경사 하강법, 볼록 최적화 -> **<span style="background-color:#FFE6E6"> 경로 계획, 센서 교정, 위치 추정 </span>**
+        - 최적화 문제의 정의, 경사 하강법, 볼록 최적화 -> **<span style="color:red"> 경로 계획, 센서 교정, 위치 추정 </span>**
     
     5. Differential Equations
         - 시스템의 동적인 행동 모델링, 시스템의 시간에 따른 변화 이해
@@ -114,10 +114,10 @@
     1. Non-linear Algebra
     
     2. Differential Geometry
-        - 곡면, 다양체, 곡률 -> **<span style="background-color:#FFE6E6"> SLAM에서의 맵 생성, 경로 계획에서의 기하학적 개념 필요성 충족 </span>**
+        - 곡면, 다양체, 곡률 -> **<span style="color:red"> SLAM에서의 맵 생성, 경로 계획에서의 기하학적 개념 필요성 충족 </span>**
     
     3. Riemannian Geometry
-        - 다양체 상의 거리와 각도 -> **<span style="background-color:#FFE6E6"> 복잡한 환경에서의 Localization and Mapping </span>**
+        - 다양체 상의 거리와 각도 -> **<span style="color:red"> 복잡한 환경에서의 Localization and Mapping </span>**
     
     4. Graph Theory
         - 경로, 네트워크 흐름, 최소 신장 트리 -> SLAM에서의 데이터 연관성과 분석, 네트워크 기반 모델링
