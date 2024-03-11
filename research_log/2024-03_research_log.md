@@ -56,30 +56,40 @@
 
 #### 2024-03-11
 - Searching about which mathematical subjects have to learn :
-    - Importance Order
-        ```
-        1. Linear Algebra (선형대수학)
-        2. Probability and statistics (확률론과 통계)
-        3. Differential Geometry (미분기하학)
-        4. Optimization Theory (최적화 이론)
-        5. Riemannian Geometry (리만 기하학)
-        6. Control Theory (제어 이론)
-        7. Graph Theory (그래프 이론)
-        ```
-    - Easy Difficulty Order
-        ```
-        1. Linear Algebra (선형대수학)
-        2. Graph Theory (그래프 이론)
-        3. Control Theory (제어 이론)
-        4. Probability and statistics (확률론과 통계)
-        5. Optimization Theory (최적화 이론)
-        6. Differential Geometry (미분기하학)
-        7. Riemannian Geometry (리만 기하학)
-        ```
-    - Especially important subjects
-        - Differnetial Equations : `Multivariable Calculus (다변수 미적분), Vector Analysis (벡터 해석)`
-        - Differential Geometry : `Riemannian Geometry (리만 기하학), Manifolds (다양체), Differential Forms (미분형식) and Stokes' Theorem (스토크 정리), Tanget Space (접공간) and Vector Fields (벡터 공간)`
+    1. Linear Algebra (선형대수학)
+    2. Probability and statistics (확률론과 통계)
+    3. Optimiaztion Theory (최적화 이론)
+        - Gradient Descent (경사하강법) : `목적함수의 gradient를 사용하여 최소점 찾는 방법`
+        - Stochastic Optimization (확률적 최적화) : `불확실성을 포함하는 최적화 문제를 해결하는 방법`
+    4. Non-linear Algebra (비선형 대수학)
+    5. Graph Theory (그래프 이론)
+        - Wieghted Graphs (가중치 그래프) : `각 엣지에 가중치가 할당된 그래프`
+        - Paths and Cycles (경로와 사이클) : `그래프내에서 노드 사이를 연결하는 엣지의 순서. 사이클은 시작점과 종료점이 같은 경로`
+        - Graph Connectivity (그래프 연결성) : `어떤 노드에서 다른 노드로 도달할 수 있는지의 여부`
+        - Trees and Spanning Trees (트리와 신장트리) : `사이클이 없는 연결 그래프. Spanning Trees는 원래 그래프의 모든 노드를 포함하면서도 최소한의 엣지로 구성된 트리`
+        - Graph Algorithms (그래프 알고리즘) :`그래프 탐색(예:DFS, BFS), 최단 경로 찾기(Dijkstra, A*), 최소 신장 트리 찾기(Kruskal, Prim)`
+    6. Differential Geometry (미분 기하학)
+        - Manifolds (다양체) : `고차원 공간에서 곡선이나 곡면과 같이 연속적인 구조를 일반화한 개념`
+        - Curvature (곡률) : `곡면이나 공간이 얼마나 휘어져 있는지를 측정` -> **`자동차의 경로 계획에 중요한 정보 제공`**
+        - Geodesics (최단 경로) : `곡면 상에서 두 점을 잇는 가장 짧은 경로` -> **`<span style="background-color:#fff5b1">경로 계획에서 최적 경로 찾는데 사용 </span>`**
+    7. Riemannian Theory (리만 기하학)
+        - Riemannian Metric (리만 행렬) : `다양체 내의 점들 사이의 거리를 측정하는 함수` -> **`로컬 거리 정보 제공`**
         - 
+    8. Topology (위상수학)
+    
+    - Mathametical Concepts related to SLAM
+        1. Linear Algebra
+        2. Probability and statistics
+        3. Optimization Theory
+        4. Graph Theory
+        5. Differential Geometry and Riemannian Geometry
+
+    - Mathemetical Concepts related to Modelings in Dynamic Environment
+        1. Probability and statistics
+        2. Non-linear Algebra/Dynamics
+        3. Differential Equations
+        4. Control Theory
+        5. Machine Learning and Pattern Recognition
 
 
 #### TODO
