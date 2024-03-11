@@ -125,7 +125,7 @@
     5. Topology
         - 공간의 연속적인 속성, 위상동형, 기본 군 -> 데이터의 연속성과 공간적 특성 이해
     
-
+- Code optimization of bounding boxes detection and segmentation detection with using YOLOv8 [🔗](../Camera_Object_Detection/YOLOv8/)
 
 
 
