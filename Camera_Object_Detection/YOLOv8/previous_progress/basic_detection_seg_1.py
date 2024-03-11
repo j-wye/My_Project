@@ -2,7 +2,6 @@ from ultralytics import YOLO
 import cv2
 import random
 import numpy as np
-import time
 
 def overlay(image, mask, color, alpha, resize=None):
     # color = color[::-1]
@@ -38,44 +37,36 @@ def main():
     class_names = model.names
     colors = [[random.randint(0, 255) for _ in range(3)] for _ in class_names]
 
-    # Input Camera index Settings
     cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
-    initial_time = 0
     while True:
         ret, img = cap.read()
         if not ret:
             break
-        
-        # Calculate and display FPS
-        current_time = time.time()
-        taken_time = current_time - initial_time
-        fps = 1 / taken_time
-        fps_str = f'FPS : {fps:.1f}'
-        initial_time = current_time
 
-        cv2.putText(img, fps_str, (5, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+        h, w, _ = img.shape
+        results = model.predict(img, stream=True)
+        
+        for r in results:
+            boxes = r.boxes  # Boxes object for bbox outputs
+            masks = r.masks  # Masks object for segment masks outputs
+            probs = r.probs  # Class probabilities for classification outputs
 
-        results = model(img)[0]
-        
-        # numpy배열로 변화해서 result에 저장
-        for result in results.cpu().numpy():
-            boxes_origin = result.boxes.data
-            masks = result.masks.data
-            
-            # (x1, y1) : 좌측 상단, (x2, y2) : 우측 하단, conf : 신뢰도, cls : 클래스
-            x_L, y_L, x_R, y_R, conf, cls = boxes_origin[0]
-            
-            # confidence 값이 threshold보다 작다면 검출하지 않고 continue
-            if conf < 0.7: continue
-            
-            img = overlay(img, masks, colors[int(cls)], 0.4)
-            plot_one_box([x_L, y_L, x_R, y_R], img, colors[int(cls)], f'{class_names[int(cls)]} {float(conf):.2}')
-        
-        cv2.imshow('YOLOv8 Segmentation Detection', img)
-        
+        if masks is not None:
+            masks = masks.data.cpu()
+            for seg, box in zip(masks.data.cpu().numpy(), boxes):
+                if box.conf > 0.6:
+                    seg = cv2.resize(seg, (w, h))
+                    img = overlay(img, seg, colors[int(box.cls)], 0.4)
+                    
+                    xmin = int(box.data[0][0])
+                    ymin = int(box.data[0][1])
+                    xmax = int(box.data[0][2])
+                    ymax = int(box.data[0][3])
+                    
+                    # 객체의 신뢰도가 0.6보다 큰 경우에만 표시합니다.
+                    plot_one_box([xmin, ymin, xmax, ymax], img, colors[int(box.cls)], f'{class_names[int(box.cls)]} {float(box.conf):.3}')
+        cv2.imshow('img', img)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
