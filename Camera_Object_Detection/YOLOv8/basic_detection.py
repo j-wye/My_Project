@@ -53,10 +53,6 @@ def main():
             # confidence 값이 threshold보다 작다면 검출하지 않고 continue
             if conf < CONFIDENCE_THRESHOLD: continue
             
-            # 클래스 이름과 신뢰도 레이블
-            # label = f'{results.names[int(cls)]} {conf:.2f}'
-            #cv2.rectangle(img, (int(x_L), int(y_L)), (int(x_R), int(y_R)), (0, 255, 0), 2)
-            #cv2.putText(img, label, (int(x_L), int(y_L)-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
             plot_one_box([x_L, y_L, x_R, y_R], img, colors[int(cls)], f'{class_names[int(cls)]} {float(conf):.2f}')
         
         
