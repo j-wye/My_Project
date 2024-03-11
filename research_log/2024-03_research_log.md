@@ -50,10 +50,6 @@
     - LiDAR Object Detection 코드가 완성되면 반복적인 실험으로 적절한 pretrained model 선택
 - Up to now progress [🔗](../Camera_Object_Detection/YOLOv8/README.md#progress)
 
-#### 2024-03-07 ~ 2024-03-12 (예정)
-- Coding for ***Extracting*** Camera Object Detection accuracy list
-- Coding for ***Extracting*** LiDAR Object Detection accuracy list (Difficult..)
-
 #### 2024-03-11
 - Searching about which mathematical subjects have to learn :
     1. Linear Algebra (선형대수학)
@@ -127,14 +123,8 @@
     
 - Code optimization of bounding boxes detection and segmentation detection with using YOLOv8 [🔗](../Camera_Object_Detection/YOLOv8/)
 
-
+#### 2024-03-12
+- 3D Reconstruction with camera
 
 #### Blah Blah,,,
-- Camera, Lidar 각각 Detection 가능하도록 코드 작성
-- Calibration 공부
-    - 자동으로 calibration 가능한 알고리즘 먼저 해볼 것
-        - camera, lidar가 장착되어 rosbag record한 데이터에 대해서 자동으로 calibration 값을 구해주는지
-- 이후 두 센서를 어떻게 합칠 것인지 .... 
-    - 기계관 107에 존재하는 차량 하나를 사용해서 데이터셋 확보(?)
-        - 하나의 환경에서 고정된 두 센서를 활용한 데이터 수집 
-- Lidar Segmentation (나중에)
+
