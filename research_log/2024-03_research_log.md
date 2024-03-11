@@ -70,10 +70,10 @@
         - Graph Algorithms (그래프 알고리즘) :`그래프 탐색(예:DFS, BFS), 최단 경로 찾기(Dijkstra, A*), 최소 신장 트리 찾기(Kruskal, Prim)`
     6. Differential Geometry (미분 기하학)
         - Manifolds (다양체) : `고차원 공간에서 곡선이나 곡면과 같이 연속적인 구조를 일반화한 개념`
-        - Curvature (곡률) : `곡면이나 공간이 얼마나 휘어져 있는지를 측정` -> **`자동차의 경로 계획에 중요한 정보 제공`**
-        - Geodesics (최단 경로) : `곡면 상에서 두 점을 잇는 가장 짧은 경로` -> <span style="color:red"> 경로 계획에서 최적 경로 찾는데 사용 </span>
+        - Curvature (곡률) : `곡면이나 공간이 얼마나 휘어져 있는지를 측정` -> **<span style="background-color:#FFE6E6"> 자동차의 경로 계획에 중요한 정보 제공 </span>**
+        - Geodesics (최단 경로) : `곡면 상에서 두 점을 잇는 가장 짧은 경로` -> **<span style="background-color:#FFE6E6"> 경로 계획에서 최적 경로 찾는데 사용 </span>**
     7. Riemannian Theory (리만 기하학)
-        - Riemannian Metric (리만 행렬) : `다양체 내의 점들 사이의 거리를 측정하는 함수` -> **`로컬 거리 정보 제공`**
+        - Riemannian Metric (리만 행렬) : `다양체 내의 점들 사이의 거리를 측정하는 함수` -> **<span style="background-color:#FFE6E6"> 로컬 거리 정보 제공 </span>**
         - 
     8. Topology (위상수학)
     
