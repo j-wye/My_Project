@@ -94,7 +94,7 @@
 
 - Learning Order :
 
-    Basic Mathemetical Foundations
+    *Basic Mathemetical Foundations*
     1. Linear Algebra
         - 벡터와 행렬 계산, 고유값과 고유벡터
 
@@ -110,7 +110,7 @@
     5. Differential Equations
         - 시스템의 동적인 행동 모델링, 시스템의 시간에 따른 변화 이해
     
-    Advanced Methetical
+    *Advanced Methetical*
     1. Non-linear Algebra
     
     2. Differential Geometry
