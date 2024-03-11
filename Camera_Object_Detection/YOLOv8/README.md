@@ -63,8 +63,7 @@ pip install -U ultralytics
 	python basic_detection.py
 	```
 	## [Visualization]
-	![](./figures/test_img1.png)
-	![](./figures/test_img2.png)
+	![](./figures/test_img_1.png)
 
 2. Code to check for basic segmentation :
 
@@ -73,5 +72,5 @@ pip install -U ultralytics
 	python basic_detection_seg.py
 	```
 	## [Visualization]
-	![](./figures/test_seg_img1.png)
-	![](./figures/test_seg_img2.png)
+	![](./figures/test_seg_img_1.png)
+	
