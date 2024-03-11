@@ -54,6 +54,33 @@
 - Coding for ***Extracting*** Camera Object Detection accuracy list
 - Coding for ***Extracting*** LiDAR Object Detection accuracy list (Difficult..)
 
+#### 2024-03-11
+- Searching about which mathematical subjects have to learn :
+    - Importance Order
+        ```
+        1. Linear Algebra (선형대수학)
+        2. Probability and statistics (확률론과 통계)
+        3. Differential Geometry (미분기하학)
+        4. Optimization Theory (최적화 이론)
+        5. Riemannian Geometry (리만 기하학)
+        6. Control Theory (제어 이론)
+        7. Graph Theory (그래프 이론)
+        ```
+    - Easy Difficulty Order
+        ```
+        1. Linear Algebra (선형대수학)
+        2. Graph Theory (그래프 이론)
+        3. Control Theory (제어 이론)
+        4. Probability and statistics (확률론과 통계)
+        5. Optimization Theory (최적화 이론)
+        6. Differential Geometry (미분기하학)
+        7. Riemannian Geometry (리만 기하학)
+        ```
+    - Especially important subjects
+        - Differnetial Equations : `Multivariable Calculus (다변수 미적분), Vector Analysis (벡터 해석)`
+        - Differential Geometry : `Riemannian Geometry (리만 기하학), Manifolds (다양체), Differential Forms (미분형식) and Stokes' Theorem (스토크 정리), Tanget Space (접공간) and Vector Fields (벡터 공간)`
+        - 
+
 
 #### TODO
 - Camera, Lidar 각각 Detection 가능하도록 코드 작성
