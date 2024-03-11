@@ -47,7 +47,6 @@ pip install -U ultralytics
 
 ## Model Test
 | <center>Model</center> | <center>Resolution</center> | <center>CPU</center> | <center>GPU</center> | <center>Processing Time</center> | <center>FPS</center> |
-
 |:--------|:--------|:--------|:--------|:--------|:--------|
 | <center>YOLOv8n.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**314.75**</center> | <center>**34.00**</center> |
 | <center>YOLOv8s.pt</center> | <center>640 * 480</center> | <center>i5-13600KF</center> | <center>NVIDIA GeForce RTX 4070 12GB</center> | <center>**234.39**</center> | <center>**33.51**</center> |
