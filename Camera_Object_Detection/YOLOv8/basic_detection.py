@@ -1,9 +1,25 @@
 from ultralytics import YOLO
 import cv2
 import time
+import random
+
+def plot_one_box(x, img, color=None, label=None, line_thickness=2):
+    # Plots one bounding box on image img
+    tl = line_thickness or round(0.002 * (img.shape[0] + img.shape[1]) / 2) + 1  # line/font thickness
+    color = color or [random.randint(0, 255) for _ in range(3)]
+    c1, c2 = (int(x[0]), int(x[1])), (int(x[2]), int(x[3]))
+    cv2.rectangle(img, c1, c2, color, thickness=tl, lineType=cv2.LINE_AA)
+    if label:
+        tf = max(tl - 1, 1)  # font thickness
+        t_size = cv2.getTextSize(label, 0, fontScale=tl / 3, thickness=tf)[0]
+        c2 = c1[0] + t_size[0], c1[1] - t_size[1] - 3
+        cv2.rectangle(img, c1, c2, color, -1, cv2.LINE_AA)  # filled
+        cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl / 3, [225, 255, 255], thickness=tf, lineType=cv2.LINE_AA)
 
 def main():
     model = YOLO('./pretrained/yolov8m.pt').to('cuda')
+    class_names = model.names
+    colors = [[random.randint(0, 255) for _ in range(3)] for _ in class_names]
 
     # Input Camera index Settings
     cap = cv2.VideoCapture(0)
@@ -38,9 +54,10 @@ def main():
             if conf < CONFIDENCE_THRESHOLD: continue
             
             # 클래스 이름과 신뢰도 레이블
-            label = f'{results.names[int(cls)]} {conf:.2f}'
-            cv2.rectangle(img, (int(x_L), int(y_L)), (int(x_R), int(y_R)), (0, 255, 0), 2)
-            cv2.putText(img, label, (int(x_L), int(y_L)-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            # label = f'{results.names[int(cls)]} {conf:.2f}'
+            #cv2.rectangle(img, (int(x_L), int(y_L)), (int(x_R), int(y_R)), (0, 255, 0), 2)
+            #cv2.putText(img, label, (int(x_L), int(y_L)-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+            plot_one_box([x_L, y_L, x_R, y_R], img, colors[int(cls)], f'{class_names[int(cls)]} {float(conf):.2f}')
         
         
         cv2.imshow('YOLOv8 Object Detection', img)
