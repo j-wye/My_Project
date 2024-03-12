@@ -40,7 +40,7 @@ pip install -U ultralytics
 
 
 ## Reference
-[YOLOv8 document1](https://docs.ultralytics.com/ko/modes/predict/)
+[YOLOv8 document1](https://docs.ultralytics.com/ko/modes/predict/#working-with-results)
 
 [YOLOv8 document2](https://docs.ultralytics.com/ko/reference/engine/results/#ultralytics.engine.results.Results)
 
