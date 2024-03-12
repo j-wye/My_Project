@@ -124,7 +124,75 @@
 - Code optimization of bounding boxes detection and segmentation detection with using YOLOv8 [🔗](../Camera_Object_Detection/YOLOv8/)
 
 #### 2024-03-12
-- 3D Reconstruction with camera
+- 3D Reconstruction with camera (마지막 목표)
+- 공부하는 과정은 아래와 같이 진행해 볼 예정
+    - **<span style="color:red"> 1. Dynamic Object Trajectory and Prediction (동적 객체 추적과 예측) </span>**
+        - Basic Level
+            - Basic of Computer Vision : 
+                ```
+                Image Processing
+                Keypoints Detection
+                ```
+            - Machine Learning and Deep Learning : 
+                ```
+                Object Detection
+                CNN, RNN
+                ```
+        - Intermediate Level
+            - Camera Calibration
+            - real-time object trajectory : 
+                ```
+                Kalman Filter
+                Particle Filter
+                ```
+        - Advanced Level
+            - Predicting the motion of dynamic objects
+                ```
+                LSTM
+                시계열 데이터 예측
+                ```
+            - MOT (다중 객체 추적)
+
+    - **<span style="color:red"> 2. 3D SLAM using Multi-Camera System (멀티-카메라 시스템을 활용한 3D SLAM) </span>**
+        - Basic Level
+            - Stereo Vision
+                ```
+                두 개의 카메라를 사용하여 깊이 정보를 추출하는 원리 학습
+                ```
+            - Basic SLAM concept
+                ```
+                EKF SLAM
+                Particle Filter SLAM
+                ```
+        - Intermediate Level
+            - Multi-Camera system
+                ```
+                여러대의 카메라를 활용하는 방법론
+                상대적인 위치와 방향을 결정하는 Calibration 학습
+                ```
+            - Visual Odometry
+                ```
+                카메라의 움직임을 추적하여 로봇이나 차량의 경로를 추정하는 방법
+                ```
+        - Advanced Level
+            - Large-scale 3D Mapping
+            - Loop Closing and Global Optimization
+                ```
+                SLAM에서 loop closing문제를 해결하고 맵의 일관성을 유지하기 위한 global optimization
+                ```
+    - **<span style="color:red"> 3. Detection and Mapping Real-time Environment changes (실시간 환경 변화 감지 및 매핑) </span>**
+        - Basic Level
+            - Image Stitching
+        - Intermediate Level
+            - Real-time data processing
+            - Environment Modeling
+                `camera data기반으로 실시간으로 환경 모델을 업데이트하는 기술을 개발`
+        - Advanced Level
+            - Advanced change detection algorithms
+            - Dynamic SLAM
+                ```
+                변화하는 환경에서도 견고하게 작동하는 SLAM 시스템을 개발
+                ```
 
 #### Blah Blah,,,
 
