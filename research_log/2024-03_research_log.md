@@ -128,69 +128,65 @@
 - 공부하는 과정은 아래와 같이 진행해 볼 예정
     - **<span style="color:red"> 1. Dynamic Object Trajectory and Prediction (동적 객체 추적과 예측) </span>**
         - Basic Level
-            - Basic of Computer Vision : 
+            - Basic Trajectory algorithms
                 ```
-                Image Processing
-                Keypoints Detection
-                ```
-            - Machine Learning and Deep Learning : 
-                ```
-                Object Detection
-                CNN, RNN
+                DeepSort
+                FairMOT
                 ```
         - Intermediate Level
-            - Camera Calibration
-            - real-time object trajectory : 
+            - Deep Learning based trajectory methods
                 ```
-                Kalman Filter
-                Particle Filter
+                YOLO와 같은 객체 탐지 모델을 추적 시스템에 통합하는 방법 학습
                 ```
-        - Advanced Level
-            - Predicting the motion of dynamic objects
-                ```
-                LSTM
-                시계열 데이터 예측
-                ```
-            - MOT (다중 객체 추적)
+            - Dataset Evaluate (Pass during project)
 
+        - Advanced Level
+            - Implement MOT system
+                ```
+                동적 환경에서 여러 객체를 동시에 추적하는 고급 시스템 구현
+                ```
+            - Real-time Processing and Optimization
+                ```
+                시스템의 성능 최적화 및 처리 속도 개선
+                ```
     - **<span style="color:red"> 2. 3D SLAM using Multi-Camera System (멀티-카메라 시스템을 활용한 3D SLAM) </span>**
         - Basic Level
-            - Stereo Vision
-                ```
-                두 개의 카메라를 사용하여 깊이 정보를 추출하는 원리 학습
-                ```
-            - Basic SLAM concept
-                ```
-                EKF SLAM
-                Particle Filter SLAM
-                ```
+            - Camera Calibration
+            - Stereo Vision and Estimating Depth
+
         - Intermediate Level
-            - Multi-Camera system
-                ```
-                여러대의 카메라를 활용하는 방법론
-                상대적인 위치와 방향을 결정하는 Calibration 학습
-                ```
             - Visual Odometry
                 ```
                 카메라의 움직임을 추적하여 로봇이나 차량의 경로를 추정하는 방법
                 ```
+            - 3D Map Build
+                ```
+                multi-camera를 사용해 3D 환경 맵을 구축하는 알고리즘 학습
+                ```
+
         - Advanced Level
-            - Large-scale 3D Mapping
             - Loop Closing and Global Optimization
                 ```
                 SLAM에서 loop closing문제를 해결하고 맵의 일관성을 유지하기 위한 global optimization
                 ```
+            - Multi-Sensor Fusion
+                ```
+                Camera + (IMU, GPS, LiDAR) 를 활용해 SLAM 정확도, robustness 향상
+
     - **<span style="color:red"> 3. Detection and Mapping Real-time Environment changes (실시간 환경 변화 감지 및 매핑) </span>**
         - Basic Level
             - Image Stitching
+            - Panorama
+        
         - Intermediate Level
-            - Real-time data processing
-            - Environment Modeling
-                ```
-                camera data기반으로 실시간으로 환경 모델을 업데이트하는 기술을 개발
-                ```
+            - 딥러닝 기반 변화 감지
+            - Real-time data Processing
+
         - Advanced Level
-            - Advanced change detection algorithms
+            - 3D 환경 매핑과 변화 감지
+                ```
+                3D 환경 맵을 실시간으로 업데이트 하면서 변화를 감지하는 고급 기술 개발
+                ```
             - Dynamic SLAM
                 ```
                 변화하는 환경에서도 견고하게 작동하는 SLAM 시스템을 개발
