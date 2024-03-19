@@ -63,7 +63,7 @@ echo 'export PATH="/opt/anaconda3/bin:$PATH" >> ~/.bashrc'
 source ~/.bashrc
 ```
 
-`cd anaconda3/envs/LOD/lib/python3.8/site-packages/torch && gedit functional.py => find VF.meshgrid => indexing='jf' 추가하기`
+`cd anaconda3/envs/LOD/lib/python3.8/site-packages/torch && gedit functional.py => find VF.meshgrid => indexing='ij' 추가하기`
 
 ### Make Clean Directory
 `sudo rm -rf ~/A`
