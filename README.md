@@ -1,7 +1,7 @@
 # Personal Projects
 ## Basic Settings before project
-[settings.md](./settings.md) : Installation before doing project. 
-## [Research Log](./research_log/README.md)
+[settings.md](./settings.md) : Installation before doing project.
+
 ## Camera Object Detection
 1. YOLOv8 [🔗](./Camera_Object_Detection/YOLOv8/)
 
