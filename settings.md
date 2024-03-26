@@ -21,7 +21,7 @@ source ~/.bashrc
 ### CUDA Installation
 ```bash
 cd ~/A
-wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+axel https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 sudo sh cuda_11.8.0_520.61.05_linux.run
 echo 'export PATH="/usr/local/cuda-11.8/bin:$PATH"' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"' >> ~/.bashrc
@@ -56,7 +56,7 @@ cat /usr/local/cuda-11.8/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
 ### Conda Environment Settings
 ```bash
-wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+axel https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 sha256sum Anaconda3-2023.09-0-Linux-x86_64.sh
 bash Anaconda3-2023.09-0-Linux-x86_64.sh
 echo 'export PATH="/opt/anaconda3/bin:$PATH" >> ~/.bashrc'
